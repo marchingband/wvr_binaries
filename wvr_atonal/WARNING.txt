@@ -1,0 +1,12 @@
+********************************************************************
+THE BINARIES IN THIS DIRECTORY ARE ONLY FOR ATONAL EURORACK MODULES
+********************************************************************
+
+Atonal boards have Rev 0 or 1 ESP32 chips, which must be compiled against Arduino-ESP32 version 2.0.1
+This is due to a bug in the Arduino-ESP32 library.
+Uploading any WVR binary version > 3.8.2 from any other folder then /wvr_atonal will brick the ESP32, with failure to initialize the PSRAM.
+Likewise, due to a bug in PlatformIO, these Atonal binaries will brick any newer WVR which was flashed using PIO.
+
+DO NOT USE THESE BINARIES UNLESS YOU HAVE AN ATONAL EURORACK MODULE
+AND
+IF YOU HAVE AN ATONAL EURORACK MODULE DO NOT USE ANY OTHER BINARIES
